@@ -1,9 +1,54 @@
 <mxfile host="app.diagrams.net">
-  <diagram name="Page-1" id="f7P4etGxi6p0Szp2JLL5">
-    <mxGraphModel dx="1414" dy="721" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+  <diagram name="Game Library UML" id="f7P4etGxi6p0Szp2JLL5">
+    <mxGraphModel dx="1667" dy="1549" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="GrLo4ZKJzDbPaZY-jERg-1" parent="1" style="swimlane;startSize=32;horizontal=1;rounded=0;html=1;fontStyle=1;fontSize=14;fillColor=none;strokeColor=#666666;collapsible=0;" value="GameLibrary" vertex="1">
+          <mxGeometry height="296" width="330" x="-590" y="-1060" as="geometry" />
+        </mxCell>
+        <mxCell id="GrLo4ZKJzDbPaZY-jERg-2" parent="GrLo4ZKJzDbPaZY-jERg-1" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=8;whiteSpace=wrap;strokeColor=#666666;fillColor=none;fontSize=13;" value="- games: ArrayList&amp;lt;Game&amp;gt;&lt;br&gt;- sessionCount: int&lt;br&gt;- totalPlayTime: double&lt;br&gt;- currentSession: boolean" vertex="1">
+          <mxGeometry height="92" width="330" y="32" as="geometry" />
+        </mxCell>
+        <mxCell id="GrLo4ZKJzDbPaZY-jERg-3" parent="GrLo4ZKJzDbPaZY-jERg-1" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=8;whiteSpace=wrap;strokeColor=#666666;fillColor=none;fontSize=13;" value="+ addGame(game: Game): void&lt;br&gt;+ removeGame(title: String): boolean&lt;br&gt;+ listGames(): void&lt;br&gt;+ searchByGenre(genre: String): void&lt;br&gt;+ showTopRated(): void&lt;br&gt;+ startSession(): void&lt;br&gt;+ endSession(hours: double): void&lt;br&gt;+ showSessionStats(): void" vertex="1">
+          <mxGeometry height="172" width="330" y="124" as="geometry" />
+        </mxCell>
+        <mxCell id="GrLo4ZKJzDbPaZY-jERg-4" parent="1" style="swimlane;startSize=32;horizontal=1;rounded=0;html=1;fontStyle=1;fontSize=14;fillColor=none;strokeColor=#666666;collapsible=0;" value="Game" vertex="1">
+          <mxGeometry height="196" width="270" x="-560" y="-700" as="geometry" />
+        </mxCell>
+        <mxCell id="GrLo4ZKJzDbPaZY-jERg-5" parent="GrLo4ZKJzDbPaZY-jERg-4" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=8;whiteSpace=wrap;strokeColor=#666666;fillColor=none;fontSize=13;" value="- title: String&lt;br&gt;- genre: String&lt;br&gt;- platform: String&lt;br&gt;- ageRating: String&lt;br&gt;- rating: double" vertex="1">
+          <mxGeometry height="112" width="270" y="32" as="geometry" />
+        </mxCell>
+        <mxCell id="GrLo4ZKJzDbPaZY-jERg-6" parent="GrLo4ZKJzDbPaZY-jERg-4" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=8;whiteSpace=wrap;strokeColor=#666666;fillColor=none;fontSize=13;" value="+ displayInfo(): void&lt;br&gt;+ rate(score: double): void" vertex="1">
+          <mxGeometry height="52" width="270" y="144" as="geometry" />
+        </mxCell>
+        <mxCell id="GrLo4ZKJzDbPaZY-jERg-7" parent="1" style="swimlane;startSize=32;horizontal=1;rounded=0;html=1;fontStyle=1;fontSize=14;fillColor=none;strokeColor=#666666;collapsible=0;" value="SinglePlayerGame" vertex="1">
+          <mxGeometry height="96" width="270" x="-760" y="-400" as="geometry" />
+        </mxCell>
+        <mxCell id="GrLo4ZKJzDbPaZY-jERg-8" parent="GrLo4ZKJzDbPaZY-jERg-7" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=8;whiteSpace=wrap;strokeColor=#666666;fillColor=none;fontSize=13;" value="- storyMode: boolean" vertex="1">
+          <mxGeometry height="32" width="270" y="32" as="geometry" />
+        </mxCell>
+        <mxCell id="GrLo4ZKJzDbPaZY-jERg-9" parent="GrLo4ZKJzDbPaZY-jERg-7" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=8;whiteSpace=wrap;strokeColor=#666666;fillColor=none;fontSize=13;" value="+ playStory(): void" vertex="1">
+          <mxGeometry height="32" width="270" y="64" as="geometry" />
+        </mxCell>
+        <mxCell id="GrLo4ZKJzDbPaZY-jERg-10" parent="1" style="swimlane;startSize=32;horizontal=1;rounded=0;html=1;fontStyle=1;fontSize=14;fillColor=none;strokeColor=#666666;collapsible=0;" value="MultiplayerGame" vertex="1">
+          <mxGeometry height="116" width="270" x="-360" y="-400" as="geometry" />
+        </mxCell>
+        <mxCell id="GrLo4ZKJzDbPaZY-jERg-11" parent="GrLo4ZKJzDbPaZY-jERg-10" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=8;whiteSpace=wrap;strokeColor=#666666;fillColor=none;fontSize=13;" value="- maxPlayers: int&lt;br&gt;- online: boolean" vertex="1">
+          <mxGeometry height="52" width="270" y="32" as="geometry" />
+        </mxCell>
+        <mxCell id="GrLo4ZKJzDbPaZY-jERg-12" parent="GrLo4ZKJzDbPaZY-jERg-10" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=8;whiteSpace=wrap;strokeColor=#666666;fillColor=none;fontSize=13;" value="+ joinGame(): void" vertex="1">
+          <mxGeometry height="32" width="270" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="GrLo4ZKJzDbPaZY-jERg-13" edge="1" parent="1" source="GrLo4ZKJzDbPaZY-jERg-1" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=open;endFill=0;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="GrLo4ZKJzDbPaZY-jERg-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GrLo4ZKJzDbPaZY-jERg-14" edge="1" parent="1" source="GrLo4ZKJzDbPaZY-jERg-7" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=0;exitX=0.5;exitY=0;entryX=0.3;entryY=1;" target="GrLo4ZKJzDbPaZY-jERg-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GrLo4ZKJzDbPaZY-jERg-15" edge="1" parent="1" source="GrLo4ZKJzDbPaZY-jERg-10" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=0;exitX=0.5;exitY=0;entryX=0.7;entryY=1;" target="GrLo4ZKJzDbPaZY-jERg-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
