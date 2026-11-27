@@ -1,0 +1,10 @@
+#BlueJ package file
+package.numDependencies=0
+package.numTargets=1
+target1.name=Game
+target1.type=ClassTarget
+target1.showInterface=false
+target1.x=70
+target1.y=40
+target1.width=120
+target1.height=70
