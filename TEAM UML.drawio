@@ -1,61 +1,32 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Game Library UML" id="f7P4etGxi6p0Szp2JLL5">
-    <mxGraphModel dx="1832" dy="2740" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2028" dy="2848" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="GrLo4ZKJzDbPaZY-jERg-16" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;font size=&quot;3&quot;&gt;Anthony Joseph Perry, Michael Adom Ampofo&amp;nbsp;&lt;/font&gt;" vertex="1">
-          <mxGeometry height="60" width="385" x="-810" y="-2170" as="geometry" />
+          <mxGeometry height="60" width="385" x="-617" y="-2180" as="geometry" />
         </mxCell>
-        <mxCell id="2-YfeoP2-NImbEDLThQA-16" parent="1" style="swimlane;startSize=32;horizontal=1;rounded=0;html=1;fontStyle=1;fontSize=14;fillColor=none;strokeColor=#666666;collapsible=0;" value="GameLibrary" vertex="1">
-          <mxGeometry height="136" width="260" x="-585.0022988505747" y="-2039.9954022988504" as="geometry" />
+        <mxCell id="WYQGlO-5bijO-f7Ly8qK-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=8;verticalAlign=top;" value="&lt;b&gt;GameLibrary&lt;/b&gt;&lt;hr&gt;- games: ArrayList&amp;lt;Game&amp;gt;&lt;hr&gt;+ addGame(game: Game): void&lt;br&gt;+ removeGame(title: String): void&lt;br&gt;+ listGames(): void&lt;br&gt;+ searchByGenre(genre: String): void&lt;br&gt;+ showTopRated(): void" vertex="1">
+          <mxGeometry height="170" width="290" x="-565" y="-2070" as="geometry" />
         </mxCell>
-        <mxCell id="2-YfeoP2-NImbEDLThQA-17" parent="2-YfeoP2-NImbEDLThQA-16" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=8;whiteSpace=wrap;strokeColor=#666666;fillColor=none;fontSize=13;" value="- games: ArrayList&amp;lt;Game&amp;gt;" vertex="1">
-          <mxGeometry height="32" width="260" y="32" as="geometry" />
+        <mxCell id="WYQGlO-5bijO-f7Ly8qK-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=8;verticalAlign=top;" value="&lt;b&gt;Game&lt;/b&gt;&lt;hr&gt;- title: String&lt;br&gt;- genre: String&lt;br&gt;- rating: double&lt;hr&gt;+ displayInfo(): void&lt;br&gt;+ rate(score: double): void" vertex="1">
+          <mxGeometry height="155" width="290" x="-565" y="-1840" as="geometry" />
         </mxCell>
-        <mxCell id="2-YfeoP2-NImbEDLThQA-18" parent="2-YfeoP2-NImbEDLThQA-16" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=8;whiteSpace=wrap;strokeColor=#666666;fillColor=none;fontSize=13;" value="+ addGame(game: Game): void&lt;br&gt;+ removeGame(title: String): void&lt;br&gt;+ listGames(): void" vertex="1">
-          <mxGeometry height="72" width="260" y="64" as="geometry" />
+        <mxCell id="WYQGlO-5bijO-f7Ly8qK-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=8;verticalAlign=top;" value="&lt;b&gt;SinglePlayerGame&lt;/b&gt;&lt;hr&gt;- storyMode: boolean&lt;hr&gt;+ playStory(): void" vertex="1">
+          <mxGeometry height="100" width="240" x="-735" y="-1620" as="geometry" />
         </mxCell>
-        <mxCell id="2-YfeoP2-NImbEDLThQA-19" parent="1" style="swimlane;startSize=32;horizontal=1;rounded=0;html=1;fontStyle=1;fontSize=14;fillColor=none;strokeColor=#666666;collapsible=0;" value="Game" vertex="1">
-          <mxGeometry height="156" width="260" x="-585.0022988505747" y="-1849.9954022988504" as="geometry" />
+        <mxCell id="WYQGlO-5bijO-f7Ly8qK-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=8;verticalAlign=top;" value="&lt;b&gt;MultiplayerGame&lt;/b&gt;&lt;hr&gt;- maxPlayers: int&lt;br&gt;- online: boolean&lt;hr&gt;+ joinGame(): void" vertex="1">
+          <mxGeometry height="120" width="240" x="-355" y="-1620" as="geometry" />
         </mxCell>
-        <mxCell id="2-YfeoP2-NImbEDLThQA-20" parent="2-YfeoP2-NImbEDLThQA-19" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=8;whiteSpace=wrap;strokeColor=#666666;fillColor=none;fontSize=13;" value="- title: String&lt;br&gt;- genre: String&lt;br&gt;- rating: double" vertex="1">
-          <mxGeometry height="72" width="260" y="32" as="geometry" />
-        </mxCell>
-        <mxCell id="2-YfeoP2-NImbEDLThQA-21" parent="2-YfeoP2-NImbEDLThQA-19" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=8;whiteSpace=wrap;strokeColor=#666666;fillColor=none;fontSize=13;" value="+ displayInfo(): void&lt;br&gt;+ rate(score: double): void" vertex="1">
-          <mxGeometry height="52" width="260" y="104" as="geometry" />
-        </mxCell>
-        <mxCell id="2-YfeoP2-NImbEDLThQA-22" parent="1" style="swimlane;startSize=32;horizontal=1;rounded=0;html=1;fontStyle=1;fontSize=14;fillColor=none;strokeColor=#666666;collapsible=0;" value="SinglePlayerGame" vertex="1">
-          <mxGeometry height="96" width="240" x="-750.0022988505747" y="-1649.9954022988504" as="geometry" />
-        </mxCell>
-        <mxCell id="2-YfeoP2-NImbEDLThQA-23" parent="2-YfeoP2-NImbEDLThQA-22" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=8;whiteSpace=wrap;strokeColor=#666666;fillColor=none;fontSize=13;" value="- storyMode: boolean" vertex="1">
-          <mxGeometry height="32" width="240" y="32" as="geometry" />
-        </mxCell>
-        <mxCell id="2-YfeoP2-NImbEDLThQA-24" parent="2-YfeoP2-NImbEDLThQA-22" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=8;whiteSpace=wrap;strokeColor=#666666;fillColor=none;fontSize=13;" value="+ playStory(): void" vertex="1">
-          <mxGeometry height="32" width="240" y="64" as="geometry" />
-        </mxCell>
-        <mxCell id="2-YfeoP2-NImbEDLThQA-25" parent="1" style="swimlane;startSize=32;horizontal=1;rounded=0;html=1;fontStyle=1;fontSize=14;fillColor=none;strokeColor=#666666;collapsible=0;" value="MultiplayerGame" vertex="1">
-          <mxGeometry height="116" width="240" x="-400.0022988505747" y="-1649.9954022988504" as="geometry" />
-        </mxCell>
-        <mxCell id="2-YfeoP2-NImbEDLThQA-26" parent="2-YfeoP2-NImbEDLThQA-25" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=8;whiteSpace=wrap;strokeColor=#666666;fillColor=none;fontSize=13;" value="- maxPlayers: int&lt;br&gt;- online: boolean" vertex="1">
-          <mxGeometry height="52" width="240" y="32" as="geometry" />
-        </mxCell>
-        <mxCell id="2-YfeoP2-NImbEDLThQA-27" parent="2-YfeoP2-NImbEDLThQA-25" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=8;whiteSpace=wrap;strokeColor=#666666;fillColor=none;fontSize=13;" value="+ joinGame(): void" vertex="1">
-          <mxGeometry height="32" width="240" y="84" as="geometry" />
-        </mxCell>
-        <mxCell id="2-YfeoP2-NImbEDLThQA-28" edge="1" parent="1" source="2-YfeoP2-NImbEDLThQA-16" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=open;endFill=0;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="2-YfeoP2-NImbEDLThQA-19">
+        <mxCell id="WYQGlO-5bijO-f7Ly8qK-5" edge="1" parent="1" source="WYQGlO-5bijO-f7Ly8qK-1" style="edgeStyle=orthogonalEdgeStyle;endArrow=open;endFill=0;html=1;" target="WYQGlO-5bijO-f7Ly8qK-2">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="2-YfeoP2-NImbEDLThQA-29" edge="1" parent="1" source="2-YfeoP2-NImbEDLThQA-22" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=0;exitX=0.5;exitY=0;entryX=0.3;entryY=1;" target="2-YfeoP2-NImbEDLThQA-19">
+        <mxCell id="WYQGlO-5bijO-f7Ly8qK-6" edge="1" parent="1" source="WYQGlO-5bijO-f7Ly8qK-3" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;endFill=0;html=1;" target="WYQGlO-5bijO-f7Ly8qK-2">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="2-YfeoP2-NImbEDLThQA-30" edge="1" parent="1" source="2-YfeoP2-NImbEDLThQA-25" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=0;exitX=0.5;exitY=0;entryX=0.7;entryY=1;" target="2-YfeoP2-NImbEDLThQA-19">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="-280" y="-1670" />
-              <mxPoint x="-403" y="-1670" />
-            </Array>
-          </mxGeometry>
+        <mxCell id="WYQGlO-5bijO-f7Ly8qK-7" edge="1" parent="1" source="WYQGlO-5bijO-f7Ly8qK-4" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;endFill=0;html=1;" target="WYQGlO-5bijO-f7Ly8qK-2">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
