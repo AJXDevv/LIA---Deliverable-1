@@ -7,10 +7,10 @@
         <mxCell id="GrLo4ZKJzDbPaZY-jERg-16" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;font size=&quot;3&quot;&gt;Anthony Joseph Perry, Michael Adom Ampofo&amp;nbsp;&lt;/font&gt;" vertex="1">
           <mxGeometry height="60" width="385" x="-767.5" y="-2480" as="geometry" />
         </mxCell>
-        <mxCell id="WYQGlO-5bijO-f7Ly8qK-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=8;verticalAlign=top;" value="&lt;div style=&quot;text-align:center&quot;&gt;&lt;b&gt;«enumeration»&lt;br&gt;Genre&lt;/b&gt;&lt;/div&gt;&lt;hr&gt;" vertex="1">
+        <mxCell id="WYQGlO-5bijO-f7Ly8qK-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=8;verticalAlign=top;" value="&lt;div style=&quot;text-align:center&quot;&gt;&lt;b&gt;enumeration&lt;br&gt;Genre&lt;/b&gt;&lt;/div&gt;&lt;hr&gt;" vertex="1">
           <mxGeometry height="80" width="180" x="-1040" y="-2330.00421686747" as="geometry" />
         </mxCell>
-        <mxCell id="WYQGlO-5bijO-f7Ly8qK-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=8;verticalAlign=top;" value="&lt;div style=&quot;text-align:center&quot;&gt;&lt;b&gt;«enumeration»&lt;br&gt;AgeRating&lt;/b&gt;&lt;/div&gt;&lt;hr&gt;AGE_18_PLUS&lt;br&gt;AGE_15_PLUS&lt;br&gt;AGE_10_PLUS" vertex="1">
+        <mxCell id="WYQGlO-5bijO-f7Ly8qK-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=8;verticalAlign=top;" value="&lt;div style=&quot;text-align:center&quot;&gt;&lt;b&gt;enumeration&lt;br&gt;AgeRating&lt;/b&gt;&lt;/div&gt;&lt;hr&gt;AGE_18_PLUS&lt;br&gt;AGE_15_PLUS&lt;br&gt;AGE_10_PLUS" vertex="1">
           <mxGeometry height="125" width="180" x="-1040" y="-2190.00421686747" as="geometry" />
         </mxCell>
         <mxCell id="WYQGlO-5bijO-f7Ly8qK-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=8;verticalAlign=top;" value="&lt;div style=&quot;text-align:center&quot;&gt;&lt;b&gt;Game&lt;/b&gt;&lt;/div&gt;&lt;hr&gt;- characterNames: String&lt;br&gt;- genre: Genre&lt;br&gt;- ageRating: AgeRating&lt;hr&gt;+ displayInfo(): void&lt;br&gt;+ startSession(): void&lt;br&gt;+ rate(rating: double): void" vertex="1">
